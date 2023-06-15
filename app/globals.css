@@ -2,26 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+:root {
+  --primarycolor: #389dd9;
+  --secendaryColor: #e7e7e7;
+
+}
+
+.pColor {
+  color: var(--primarycolor);
+}
+
+.pBg {
+  background: var(--primarycolor);
+}
+
+.rBg {
+  background: #00b67a;
+  padding: 2px;
+}
+
+.sColor {
+  color: var(--secendaryColor);
+}
+
+.sBg {
+  background: var(--secendaryColor);
+}
+
+.sBg2 {
+  background: #d4d4d4;
+}
+
+
+.bBg {
+  background: #2e2e2e;
+}
+
+.bBgs {
+  background-color: #424242;
+}
+
+.toprediusDesign {
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 100%;
+}
+
+.ridus {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 10%;
+  height: 250px;
+  background: var(--primarycolor);
+}
+
+.bottomBorder {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.containers {
+  width: 85%;
+  margin: auto;
+}
+
+.logoWrp {
+  width: 350px;
+  height: 80px;
+  padding: 5px 0;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+.discordHeight {
+  height: 500px;
+}
+
+.color {
+  color: rgb(238, 238, 238);
+}
+
+.borderBOtom {
+  border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.singleHeight {
+  height: 410px;
 }
